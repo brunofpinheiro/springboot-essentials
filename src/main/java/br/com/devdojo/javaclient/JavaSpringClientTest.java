@@ -10,11 +10,14 @@ public class JavaSpringClientTest {
         Student studentPost = new Student();
         studentPost.setName("John Wick");
         studentPost.setEmail("john@pencil.com");
+        studentPost.setId(29L);
 
         JavaClienteDAO dao = new JavaClienteDAO();
 //        System.out.println(dao.findById(1));
-        List<Student> students = dao.listAll();
-        System.out.println(students);
+//        List<Student> students = dao.listAll();
+//        System.out.println(students);
 //        System.out.println(dao.save(studentPost));
+//        dao.update(studentPost);
+        dao.delete(29);
     }
 }
