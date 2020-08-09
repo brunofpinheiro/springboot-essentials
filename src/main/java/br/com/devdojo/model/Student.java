@@ -21,6 +21,12 @@ public class Student extends AbstractEntity {
         this.email = email;
     }
 
+    public Student(long id, @NotEmpty(message = "O campo nome do estudante é obrigatório") String name, @Email @NotEmpty String email) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
